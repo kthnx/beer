@@ -16,6 +16,8 @@ function setup() {
 }
 
 function draw() {
+  print("hello");
+
   background(200);
 
   if (stage ==1) {
