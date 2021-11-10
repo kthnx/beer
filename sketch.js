@@ -22,7 +22,7 @@ function setup() {
   createCanvas(375,812);
   stage=1;
 
-  print('kill me');
+
 
 }
 
