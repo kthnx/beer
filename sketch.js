@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   fill(0);
   textFont(quickS);
-  textSize(10);
+  textSize(11);
 //  textStyle(BOLD);
 //  text(data1[0].name, 100, 100);
 
@@ -63,18 +63,21 @@ function draw() {
 
   } else if (stage ==3) {
     image(img3a,0,0);
-    text(data1[99].name,18, 270);
-    text(data1[99].brewery_type,18, 290);
+    textSize(18);
+    text(data1[99].name,18, 280);
+    text(data1[99].brewery_type,18, 300);
   } else if (stage ==4) {
     image(img4,0,0);
   } else if (stage ==5) {
     image(img3b,0,0);
-    text(data1[111].name,18, 270);
-    text(data1[111].brewery_type,18, 290);
+    textSize(18);
+    text(data1[111].name,18, 280);
+    text(data1[111].brewery_type,18, 300);
   } else if (stage ==6) {
     image(img3c,0,0);
-    text(data1[212].name,18, 270);
-    text(data1[212].brewery_type,18, 290);
+    textSize(18);
+    text(data1[212].name,18, 280);
+    text(data1[212].brewery_type,18, 300);
   }
 
 }
