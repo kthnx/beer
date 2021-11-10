@@ -10,7 +10,10 @@ function preload() {
   img2 = loadImage('assets/2.png');
   img3 = loadImage('assets/3.png');
   img4 = loadImage('assets/4.png');
-  data1 = loadJSON('assets/breweries.json');
+  data1 = loadJSON('assets/breweries.json', cB);
+    function cB(jData1){
+      data1=jData1;
+    };
   quickS = loadFont('assets/Quicksand.ttf');
 
   img3a = loadImage('assets/3a.png');
@@ -27,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-  fill(0);
+  fill(232, 124, 7);
   textFont(quickS);
   textSize(11);
 //  textStyle(BOLD);
@@ -41,7 +44,7 @@ function draw() {
 
     // for( var i =0; i< data1.length ; i++){
     //
-    // if (data1[i].city = 'los_angeles'){
+    // if (data1[i].city = 'seattle'){
     //   text(data1[i].name, 100, (20*i) +100);
     //   text(data1[i].city, 100, (20*i) +120);
     //   text(data1[i].brewery_type, 100, (20*i) +140);
